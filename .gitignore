@@ -1,0 +1,13 @@
+.DS_store
+Thumbs.db
+node_modules
+build
+.class
+.log
+.lock
+.temp
+.env
+.sass-cache
+.pdf
+*.jpg
+*.jpeg
