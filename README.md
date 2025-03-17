@@ -31,7 +31,8 @@ En este repositorio se encuentra alojado el código fuente en HTML y SCSS para l
   
 - Hacer la build con el comando `gulp build`.
 
-- __¡¡¡IMPORTANTE!!!__ No modificar los archivos _gulpfile.js_, _package.json_ o _package-lock.json_ si no se tiene experiencia con gulp o __no se sabe lo que se está haciendo__. Se recomienda consultar documentación de SCSS y gulp antes de realizar modificaciones.
+## ¡¡¡IMPORTANTE!!!
+No modificar los archivos _gulpfile.js_, _package.json_ o _package-lock.json_ si no se tiene experiencia con gulp __o no se sabe lo que se está haciendo__. Se recomienda consultar documentación de SCSS y gulp antes de realizar modificaciones.
 
 
 ## Licencia
