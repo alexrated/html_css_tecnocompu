@@ -31,9 +31,11 @@ En este repositorio se encuentra alojado el código fuente en HTML y SCSS para l
   
 - Hacer la build con el comando `gulp build`.
 
-## ¡¡¡IMPORTANTE!!!
+## ¡IMPORTANTE!
 No modificar los archivos _gulpfile.js_, _package.json_ o _package-lock.json_ si no se tiene experiencia con gulp __o no se sabe lo que se está haciendo__. Se recomienda consultar documentación de SCSS y gulp antes de realizar modificaciones.
 
+## Sitio web con el modelado
+Sitio web de [Tecnocompu Gaming Store](https://tecnocompu.netlify.app/)
 
 ## Licencia
 El presente código se licencia bajo la GPLv3. Se permite la libre su libre ejecución, copia y modificación.
