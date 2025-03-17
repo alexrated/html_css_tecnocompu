@@ -1,0 +1,32 @@
+{
+  "name": "maquetacion_tecnocompu_html",
+  "version": "1.0.0",
+  "description": "Ejercicio académico para el programa ADSO en el SENA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Echeverri - Miguel Bermúdez",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.5.3"
+  },
+  "dependencies": {
+    "gulp-notify": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.85.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ]
+}
