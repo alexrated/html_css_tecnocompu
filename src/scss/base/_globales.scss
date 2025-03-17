@@ -1,0 +1,84 @@
+/*
+Archivo>   >>> _globales.scss
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se definen estilos globales para la aplicación
+*/
+
+@use 'variables' as v;
+
+// Siguientes 10 líneas son snippet para aplicarle border-box a todo el HTML:
+html {
+    font-size: 62.5%; // Para que 1rem sea igual a 10px
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+// Contenedor para que secciones de la página web sean de máximo 1200px:
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.activo {
+    border-bottom: 2px dashed v.$colorPrimario;
+    &--icono {
+        border-bottom: 2px dashed v.$colorSecundario;
+    }
+}
+
+body {
+    font-family: v.$fuentePrincipal;
+    font-size: 1.6rem;
+    background-color: v.$fondo;
+    // Las siguientes tres líneas permiten empujar el footer en desktop vertical
+    // Se debe usar margin-top: auto; en el archivo de estilos para la sección footer:
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p {
+    color: v.$negro;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Imágenes responsive:
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 v.$separacion;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}

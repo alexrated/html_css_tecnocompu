@@ -1,0 +1,23 @@
+/*
+Archivo>   >>> app.scss
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se compilan a CSS las carpetas con el
+ código SCSS de la aplicación
+*/
+
+@use 'base';
+@use 'header';
+@use 'destacados';
+@use 'nosotros';
+@use 'opiniones';
+@use 'newsletter';
+@use 'footer';
+@use 'internas';
+@use 'categorias-producto';

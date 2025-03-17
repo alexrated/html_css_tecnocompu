@@ -1,0 +1,88 @@
+/*
+Archivo>   >>> _mixins.scss
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se definen algunas funcionalidades
+ de uso global para la aplicación
+*/
+
+@use 'variables' as v;
+@use 'sass:color' as c;
+
+// mixins para media queries:
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin pantalla4k {
+    @media (min-width: v.$pantalla4k) {
+        @content;
+    }
+}
+
+// mixin para botón:
+@mixin boton($colorBoton, $colorTexto) {
+    background-color: $colorBoton;
+    font-size: 2rem;
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: $colorTexto;
+    text-decoration: none;
+    transition: background-color 300mx ease;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        background-color: c.adjust($colorBoton, $lightness: -15%);
+    }
+
+    @include tablet {
+        width: auto;
+    }
+
+}
+
+// mixin para display grid con columnas y espaciado deseado:
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+// mixin para los heading:
+@mixin heading {
+    margin: 0;
+    text-align: center;
+    font-family: v.$fuenteSecundaria;
+    text-transform: uppercase;
+    color: v.$colorPrimario;
+        
+    @media (min-width: v.$desktop) {
+        text-align: left;
+        font-size: 5rem;
+    }
+}

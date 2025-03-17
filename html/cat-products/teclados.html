@@ -1,0 +1,431 @@
+<!--
+Archivo    >>> teclados.html
+Proyecto   >>> TecnoCompu Gaming Store web app
+Aprendices >>>
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se escribe el HTML para la página de productos "teclados".
+-Se utiliza el enfoque BEM (Block - Module - Modifier) para nombrar las clases CSS
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoCompu - Teclados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../build/css/app.css">
+</head>
+
+<body>
+    <!-- SECCIÓN HEADER -->
+    <header class="header contenedor">
+
+        <!-- logo: -->
+        <div class="header__logo">
+            <a href="../../index.html">
+                <picture>
+                    <source
+                        srcset="../../build/img/logo_tecnocompu.avif"
+                        type="image/avif"
+                    >
+                    <source
+                        srcset="../../build/img/logo_tecnocompu.webp"
+                        type="image/webp"
+                    >
+                    <img
+                        loading="lazy"
+                        src="../../build/img/logo_tecnocompu.png"
+                        alt="Logo de TecnoCompu Gaming Store"
+                    >
+                </picture>
+            </a>
+        </div>
+
+        <!-- navegación: -->
+        <nav class="navegacion">
+            <a href="../productos.html" class="navegacion__link activo">Productos</a>
+            <a href="../contacto.html" class="navegacion__link">Contacto</a>
+
+            <!-- icono inicio usuarios: -->
+            <div class="navegacion__iconos">
+                <a href="../inicio-sesion-clientes.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/inicio_sesion.svg" alt="Imagen inicio de sesión">
+                    <span class="navegacion__span">Inicia tu sesión</span>
+                </a>
+            </div>
+
+            <!-- icono carrito de compras -->
+            <div class="navegacion__iconos">
+                <a href="../carrito-compras.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/carrito_compras.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span">Tu carrito</span>
+                </a>
+            </div>
+
+            <!-- icono inicio administradores: -->
+            <div class="navegacion__iconos">
+                <a href="../inicio-sesion-admin.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/admin.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span navegacion__span--color">Administradores</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- SECCIÓN TECLADOS-->
+    <main class="contenedor teclados">
+        <!-- heading -->
+        <h2 class="teclados__heading">Teclados</h2>
+
+        <!-- rejilla teclados-->
+        <div class="teclados__grid">
+
+            <!-- Teclado 1 - Air75 HE -->
+            <div class="teclado">
+                <!-- imagen -->
+                <div class="teclado__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/air75he_2.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/air75he_2.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../build/img/air75he_2.png"
+                            alt="Imagen teclado Nuphy Air 75HE"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="teclado__contenido">
+                    <h3 class="teclado__subtitulo">Nuphy Air 75HE</h3>
+                    <h4 class="teclado__frase">
+                        Teclea como un PRO
+                    </h4>
+                    <p class="teclado__info">
+                        El mejor teclado de bajo perfil con switches HE del mercado.
+                        El Nuphy&copy Air 75HE combina lo mejor de los teclados
+                        mecánicos con los switches HE de presión personalizable,
+                        de manera que tus kills sean más suaves, precisos y placenteros
+                        para los dedos.
+                    </p>
+                    <p class="teclado__precio">$970.000</p>
+                    <a href="#" class="teclado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+            <!-- Teclado 2 - Air 75 -->
+            <div class="teclado">
+                <!-- imagen -->
+                <div class="teclado__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/air75_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/air75_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/air75_1.png"
+                            alt="Imagen teclado Nuphy Air 75 V2"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="teclado__contenido">
+                    <h3 class="teclado__subtitulo">Nuphy air 75 V2</h3>
+                    <h4 class="teclado__frase">
+                        Productividad "Thocky"
+                    </h4>
+                    <p class="teclado__info">
+                        TecnoCompu trae a nuestro mercado local la segunda versión
+                        del Nuphy&copy Air 75, un teclado mecánico de bajo perfil al 75%
+                        con switches wisteria pro que harán que te enamores de su
+                        sonido "thocky". Conectividad Bluetooth con hasta tres
+                        disposivivos y conectividad alámbrica e inalámbrica (dongle).
+                        Compatible con el software QMK VIA para personalización.
+                    </p>
+                    <p class="teclado__precio">$809.000</p>
+                    <a href="#" class="teclado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+            <!-- Teclado 3 - Halo 75 -->
+            <div class="teclado">
+                <!-- imagen -->
+                <div class="teclado__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/halo65_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/halo65_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/halo65_1.png"
+                            alt="Imagen teclado Nuphy Halo 65"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="teclado__contenido">
+                    <h3 class="teclado__subtitulo">Nuphy Halo 65</h3>
+                    <h4 class="teclado__frase">
+                        Perfil alto, Gaming superior
+                    </h4>
+                    <p class="teclado__info">
+                        El Nuphy&copy Halo 65 es un teclado con switches HE de
+                        presión variable orientados al gaming. Su layout del 65%
+                        lo convierte en un accesorio compacto y que ocupa muy poco
+                        espacio en tu escritorio. Sus teclas de alto perfil hechas
+                        double shot PBT te garantizarán gran durabilidad.
+                    </p>
+                    <p class="teclado__precio">$769.000</p>
+                    <a href="#" class="teclado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+            <!-- Teclado 4 - Redragon Kumara -->
+            <div class="teclado">
+                <!-- imagen -->
+                <div class="teclado__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/kumara_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/kumara_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/kumara_1.png"
+                            alt="Imagen teclado Nuphy Halo 65"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="teclado__contenido">
+                    <h3 class="teclado__subtitulo">Redragon Kumara K552</h3>
+                    <h4 class="teclado__frase">
+                        Gran desempeño al mejor precio
+                    </h4>
+                    <p class="teclado__info">
+                        La gran calidad del Redragon Kumara K552, y su precio
+                        económico, lo vuelven un atractivo ideal para que te diviertas
+                        frente a la pantalla. Su ergonomía, su base antidelizante y su
+                        rápido tiempo de respuesta permite que tus juegos favoritos se
+                        sientan más cerca que nunca, al alcance de tus manos.
+                    </p>
+                    <p class="teclado__precio">$199.900</p>
+                    <a href="#" class="teclado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+            <!-- Teclado 5 - MX Keys Mini -->
+            <div class="teclado">
+                <!-- imagen -->
+                <div class="teclado__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/mx_mini_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/mx_mini_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/mx_mini_1.png"
+                            alt="Imagen teclado MX Keys Mini"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="teclado__contenido">
+                    <h3 class="teclado__subtitulo">Logitech MX Keys Mini</h3>
+                    <h4 class="teclado__frase">
+                        Tamaño mínimo, comodidad máxima
+                    </h4>
+                    <p class="teclado__info">
+                        Trabaja o estudia con un teclado minimalista que maximiza la
+                        accesibilidad de cada tecla, comando y acceso directo. El
+                        formato minimalista favorece la alineación de los hombros y
+                        el acercamiento del ratón al teclado, mejorando la postura y
+                        la ergonomía. Compatible simultáneamente con hasta 3
+                        dispositivos a la vez vía Bluetooth.
+                    </p>
+                    <p class="teclado__precio">$439.900</p>
+                    <a href="#" class="teclado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+            <!-- Teclado 6 - Pebble keys 2 -->
+            <div class="teclado">
+                <!-- imagen -->
+                <div class="teclado__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/pebble_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/pebble_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/pebble_1.png"
+                            alt="Imagen teclado MX Keys Mini"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="teclado__contenido">
+                    <h3 class="teclado__subtitulo">Logitech Pebble Keys 2</h3>
+                    <h4 class="teclado__frase">
+                        Portabilidad y economía
+                    </h4>
+                    <p class="teclado__info">
+                        Deja que el mundo vea quién eres con el Pebble Keys 2 K380s.
+                        Un teclado ultraliviano y delgado, diseñado para destacar que
+                        te entrega un tecleo suave y preciso, asi como conectividad
+                        Bluetooth simultánea con hasta tres dispositivos.
+                    </p>
+                    <p class="teclado__precio">$169.900</p>
+                    <a href="#" class="teclado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+            
+        </div>
+
+        <a href="../productos.html" class="teclados__regresar">Regresar a productos</a>
+    </main>
+
+    <!-- SECCIÓN FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer__grid">
+
+             <!-- columna 1 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Productos</h3>
+                <nav class="footer__nav">
+                    <a href="../../index.html" class="footer__link">
+                        Inicio
+                    </a>
+                    <a href="../carrito-compras.html" class="footer__link">
+                        Tu carrito
+                    </a>
+                    <a href="torres-gamer.html" class="footer__link">
+                        Torres gamer
+                    </a>
+                    <a href="portatiles.html" class="footer__link">
+                        Portátiles
+                    </a>
+                    <a href="monitores.html" class="footer__link">
+                        Monitores
+                    </a>
+                    <a href="consolas.html" class="footer__link">
+                        Consolas</a>
+                    <a href="teclados.html" class="footer__link">Teclados
+
+                    </a>
+                    <a href="ratones.html" class="footer__link">
+                        Ratones
+                    </a>
+                    <a href="graficas.html" class="footer__link">
+                        Tarjetas gráficas
+                    </a>
+                    <a href="accesorios.html" class="footer__link">
+                        Accesorios
+                    </a>
+                </nav>
+            </div>
+
+            <!-- columna 2 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Contacto</h3>
+                <!-- Email -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/email.svg"
+                        alt="Icono de Email"
+                    >
+                    <p class="footer__texto">tecnocompu@tecnocompu.co</p>
+                </div>
+                <!-- Dirección -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/address.svg"
+                        alt="Icono de ubicación"
+                    >
+                    <p class="footer__texto">Fake Street 123, Medellín, Colombia</p>
+                </div>
+                <!-- Teléfono -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/phone.svg"
+                        alt="Icono de teléfono"
+                    >
+                    <p class="footer__texto--llamar">+57 3167101510</p>
+                    <a href="tel:+573167101510" class="footer__link--llamar">Llamar</a>
+                </div>
+                <!-- link a formulario contacto -->
+                <div class="footer__contacto">
+                    <a href="contacto.html" class="footer__link--contacto">
+                        Formulario de contacto
+                    </a>
+                </div>
+            </div>
+
+            <!-- columna 3 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Búscanos en</h3>
+                <nav class="footer__social">
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/instagram.svg" alt="Logo de Instagram">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/tik-tok.svg" alt="Logo de Tik-Tok">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/youtube.svg" alt="Logo de YouTube">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/facebook.svg" alt="Logo de Facebook">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/whatsapp.svg" alt="Logo de WhatsApp">
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            &copy TecnoCompu Gaming Store, 2025. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/*
+Archivo>   >>> _navegacion.scss
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se definen estilos para la clase .navegacion
+*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navegacion {
+    font-family: v.$fuenteSecundaria;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    @include m.tablet {
+        width: auto;
+        flex-direction: row;
+        gap: v.$separacion;
+        margin-bottom: 2rem;
+    }
+    @include m.desktop {
+        margin-bottom: 0;
+    }
+
+    &__link {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: v.$colorSecundario;
+        @include m.desktop {
+            font-size: 3.8rem;
+        }
+    }
+
+    &__iconos {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        position: relative;
+        @include m.tablet {
+            flex-direction: row;
+        }
+
+        &--imagen {
+            width: 4.2rem;
+        }
+    }    
+
+    &__span {
+        font-family: v.$fuentePrincipal;
+        visibility: hidden;
+        width: 12rem;
+        color: v.$colorSecundario;
+        text-align: center;
+        border-radius: 0.5rem;
+        padding: 1rem 0;
+        position: absolute;
+        z-index: 1;
+        bottom:-65%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 300ms;
+        &--color {
+            color: v.$colorPrimario;
+        }
+    }
+
+    &__iconos:hover &__span {
+        visibility: visible;
+        opacity: 1;
+    }
+}

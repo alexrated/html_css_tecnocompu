@@ -1,0 +1,312 @@
+<!--
+Archivo    >>> graficas.html
+Proyecto   >>> TecnoCompu Gaming Store web app
+Aprendices >>>
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se escribe el HTML para la página de productos "tarjetas gráficas".
+-Se utiliza el enfoque BEM (Block - Module - Modifier) para nombrar las clases CSS
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoCompu - Tarjetas gráficas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../build/css/app.css">
+</head>
+
+<body>
+    <!-- SECCIÓN HEADER -->
+    <header class="header contenedor">
+
+        <!-- logo: -->
+        <div class="header__logo">
+            <a href="../../index.html">
+                <picture>
+                    <source
+                        srcset="../../build/img/logo_tecnocompu.avif"
+                        type="image/avif"
+                    >
+                    <source
+                        srcset="../../build/img/logo_tecnocompu.webp"
+                        type="image/webp"
+                    >
+                    <img
+                        loading="lazy"
+                        src="../../build/img/logo_tecnocompu.png"
+                        alt="Logo de TecnoCompu Gaming Store"
+                    >
+                </picture>
+            </a>
+        </div>
+
+        <!-- navegación: -->
+        <nav class="navegacion">
+            <a href="../productos.html" class="navegacion__link activo">Productos</a>
+            <a href="../contacto.html" class="navegacion__link">Contacto</a>
+
+            <!-- icono inicio usuarios: -->
+            <div class="navegacion__iconos">
+                <a href="../inicio-sesion-clientes.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/inicio_sesion.svg" alt="Imagen inicio de sesión">
+                    <span class="navegacion__span">Inicia tu sesión</span>
+                </a>
+            </div>
+
+            <!-- icono carrito de compras -->
+            <div class="navegacion__iconos">
+                <a href="../carrito-compras.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/carrito_compras.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span">Tu carrito</span>
+                </a>
+            </div>
+
+            <!-- icono inicio administradores: -->
+            <div class="navegacion__iconos">
+                <a href="../inicio-sesion-admin.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/admin.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span navegacion__span--color">Administradores</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- SECCIÓN TARJETAS GRÁFICAS-->
+    <main class="contenedor graficas">
+        <!-- heading -->
+        <h2 class="graficas__heading">Tarjetas gráficas</h2>
+
+        <!-- rejilla graficas -->
+        <div class="graficas__grid">
+
+            <!-- tarjeta 1 - Nvidia 4080 -->
+            <div class="grafica">
+                <!-- imagen -->
+                <div class="grafica__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/4080_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/4080_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/4080_1.png"
+                            alt="Imagen NVIDIA 4080"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="grafica__contenido">
+                    <h3 class="grafica__subtitulo">Nvidia 4080</h3>
+                    <h4 class="grafica__frase">
+                        Poder bruto
+                    </h4>
+                    <p class="grafica__info">
+                        Potencia tu PC con NVIDIA® GeForce RTX™ 4080. Da vida a tus juegos y
+                        proyectos creativos con ray tracing acelerado y gráficos impulsados
+                        ​​por IA. Está impulsada por la arquitectura ultraeficiente NVIDIA 
+                        Ada Lovelace y 16 GB de memoria G6X súper rápida.
+                    </p>
+                    <p class="grafica__precio">$5.650.000</p>
+                    <a href="#" class="grafica__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 - Nvidia 4050 -->
+            <div class="grafica">
+                <!-- imagen -->
+                <div class="grafica__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/4050_3.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/4050_3.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/4050_3.png"
+                            alt="Imagen NVIDIA 4050"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="grafica__contenido">
+                    <h3 class="grafica__subtitulo">NVIDIA 4050</h3>
+                    <h4 class="grafica__frase">
+                        Potencia amiga de tu bolsillo
+                    </h4>
+                    <p class="grafica__info">
+                        Potencia tu PC con NVIDIA® GeForce RTX™ 4060. Da vida a tus juegos y
+                        proyectos creativos con ray tracing acelerado y gráficos impulsados
+                        ​​por IA. Está impulsada por la arquitectura ultraeficiente NVIDIA 
+                        Ada Lovelace y 8 GB de memoria G6X súper rápida.
+                    </p>
+                    <p class="grafica__precio">$1.749.000</p>
+                    <a href="#" class="grafica__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 - AMD 580 -->
+            <div class="grafica">
+                <!-- imagen -->
+                <div class="grafica__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/amd580_2.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/amd580_2.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/amd580_2.png"
+                            alt="Imagen tarjeta gráfica AMD 580"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="grafica__contenido">
+                    <h3 class="grafica__subtitulo">AMD 580</h3>
+                    <h4 class="grafica__frase">
+                        Relación potencia - precio
+                    </h4>
+                    <p class="grafica__info">
+                        Tarjeta gráfica RX580 GDDR5 de 8 GB y 256 bits Tarjeta gráfica
+                        profesional para juegos PCI Express silenciosa y eficiente para
+                        computadora. Cuenta con 8 GB de memoria G6X súper rápida y una
+                        frecuencia de memoria de 7000 MHz.
+                    </p>
+                    <p class="grafica__precio">$642.000</p>
+                    <a href="#" class="grafica__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="../productos.html" class="graficas__regresar">Regresar a productos</a>
+    </main>
+
+    <!-- SECCIÓN FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer__grid">
+
+             <!-- columna 1 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Productos</h3>
+                <nav class="footer__nav">
+                    <a href="../../index.html" class="footer__link">
+                        Inicio
+                    </a>
+                    <a href="../carrito-compras.html" class="footer__link">
+                        Tu carrito
+                    </a>
+                    <a href="torres-gamer.html" class="footer__link">
+                        Torres gamer
+                    </a>
+                    <a href="portatiles.html" class="footer__link">
+                        Portátiles
+                    </a>
+                    <a href="monitores.html" class="footer__link">
+                        Monitores
+                    </a>
+                    <a href="consolas.html" class="footer__link">
+                        Consolas</a>
+                    <a href="teclados.html" class="footer__link">Teclados
+
+                    </a>
+                    <a href="ratones.html" class="footer__link">
+                        Ratones
+                    </a>
+                    <a href="graficas.html" class="footer__link">
+                        Tarjetas gráficas
+                    </a>
+                    <a href="accesorios.html" class="footer__link">
+                        Accesorios
+                    </a>
+                </nav>
+            </div>
+
+            <!-- columna 2 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Contacto</h3>
+                <!-- Email -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/email.svg"
+                        alt="Icono de Email"
+                    >
+                    <p class="footer__texto">tecnocompu@tecnocompu.co</p>
+                </div>
+                <!-- Dirección -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/address.svg"
+                        alt="Icono de ubicación"
+                    >
+                    <p class="footer__texto">Fake Street 123, Medellín, Colombia</p>
+                </div>
+                <!-- Teléfono -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/phone.svg"
+                        alt="Icono de teléfono"
+                    >
+                    <p class="footer__texto--llamar">+57 3167101510</p>
+                    <a href="tel:+573167101510" class="footer__link--llamar">Llamar</a>
+                </div>
+                <!-- link a formulario contacto -->
+                <div class="footer__contacto">
+                    <a href="contacto.html" class="footer__link--contacto">
+                        Formulario de contacto
+                    </a>
+                </div>
+            </div>
+
+            <!-- columna 3 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Búscanos en</h3>
+                <nav class="footer__social">
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/instagram.svg" alt="Logo de Instagram">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/tik-tok.svg" alt="Logo de Tik-Tok">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/youtube.svg" alt="Logo de YouTube">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/facebook.svg" alt="Logo de Facebook">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/whatsapp.svg" alt="Logo de WhatsApp">
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            &copy TecnoCompu Gaming Store, 2025. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>

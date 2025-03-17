@@ -1,0 +1,385 @@
+<!--
+Archivo    >>> ratones.html
+Proyecto   >>> TecnoCompu Gaming Store web app
+Aprendices >>>
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se escribe el HTML para la página de productos "ratones".
+-Se utiliza el enfoque BEM (Block - Module - Modifier) para nombrar las clases CSS
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoCompu - Ratones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../build/css/app.css">
+</head>
+
+<body>
+    <!-- SECCIÓN HEADER -->
+    <header class="header contenedor">
+
+        <!-- logo: -->
+        <div class="header__logo">
+            <a href="../../index.html">
+                <picture>
+                    <source
+                        srcset="../../build/img/logo_tecnocompu.avif"
+                        type="image/avif"
+                    >
+                    <source
+                        srcset="../../build/img/logo_tecnocompu.webp"
+                        type="image/webp"
+                    >
+                    <img
+                        loading="lazy"
+                        src="../../build/img/logo_tecnocompu.png"
+                        alt="Logo de TecnoCompu Gaming Store"
+                    >
+                </picture>
+            </a>
+        </div>
+
+        <!-- navegación: -->
+        <nav class="navegacion">
+            <a href="../productos.html" class="navegacion__link activo">Productos</a>
+            <a href="../contacto.html" class="navegacion__link">Contacto</a>
+
+            <!-- icono inicio usuarios: -->
+            <div class="navegacion__iconos">
+                <a href="../inicio-sesion-clientes.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/inicio_sesion.svg" alt="Imagen inicio de sesión">
+                    <span class="navegacion__span">Inicia tu sesión</span>
+                </a>
+            </div>
+
+            <!-- icono carrito de compras -->
+            <div class="navegacion__iconos">
+                <a href="../carrito-compras.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/carrito_compras.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span">Tu carrito</span>
+                </a>
+            </div>
+
+            <!-- icono inicio administradores: -->
+            <div class="navegacion__iconos">
+                <a href="../inicio-sesion-admin.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/admin.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span navegacion__span--color">Administradores</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- SECCIÓN RATONES-->
+    <main class="contenedor ratones">
+        <!-- heading -->
+        <h2 class="ratones__heading">Ratones</h2>
+
+        <!-- rejilla ratones -->
+        <div class="ratones__grid">
+
+            <!-- Ratón 1 - logitech superlight -->
+            <div class="raton">
+                <!-- imagen -->
+                <div class="raton__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/superlight_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/superlight_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/superlight_1.png"
+                            alt="Imagen ratón gamer Logitech Superlight 2"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="raton__contenido">
+                    <h3 class="raton__subtitulo">pro x superlight 2</h3>
+                    <h4 class="raton__frase">
+                        Tan ligero como el viento
+                    </h4>
+                    <p class="raton__info">
+                        Te ofrecemos uno de los mejores ratones gamer del mercado.
+                        Sus 60 gramos de peso te parecerán poco más que una pluma
+                        entre tus manos, mientras que sus switches lightforce de 
+                        alto rendimiento te permitirán alcanzar más kills que nadie.
+                    <p class="raton__precio">$620.000</p>
+                    <a href="#" class="raton__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+            <!-- Ratón 2 - Lamzu Thorn -->
+            <div class="raton">
+                <!-- imagen -->
+                <div class="raton__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/lamzu_thorn_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/lamzu_thorn_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/lamzu_thorn_1.png"
+                            alt="Imagen Lamzu Thorn"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="raton__contenido">
+                    <h3 class="raton__subtitulo">Lamzu x fnatic thorn</h3>
+                    <h4 class="raton__frase">
+                        Épico
+                    </h4>
+                    <p class="raton__info">
+                        52 gramos de peso y agarre ergonómico. Con orgullo te
+                        presentamos uno de los ratones mejor valorados en el PRO
+                        Gaming> El Lamzu X Fnatic Thorn está diseñado para cualquier
+                        tipo de agarre (palma, garra o dedos) y con la durabilidad en
+                        como máxima, pues sus switches ópticos ofrecen 80 millones
+                        de clicks.
+                    </p>
+                    <p class="raton__precio">$465.000</p>
+                    <a href="#" class="raton__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!-- Ratón 3 - MX master 3S -->
+            <div class="raton">
+                <!-- imagen -->
+                <div class="raton__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/mx_master_2.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/mx_master_2.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/mx_master_2.png"
+                            alt="Imagen Logitech MX Master 3S"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="raton__contenido">
+                    <h3 class="raton__subtitulo">Logitech MX Master 3S</h3>
+                    <h4 class="raton__frase">
+                        Productividad desatada
+                    </h4>
+                    <p class="raton__info">
+                        Simplemente el mejor ratón para productividad. Con sus 8
+                        botones jamás andarás corto de funciones. El control de tu PC
+                        al alcance de tus dedos y con una ergonomía como ningún otro
+                        ratón. Tus manos te lo agradecerán.
+                    </p>
+                    <p class="raton__precio">$499.000</p>
+                    <a href="#" class="raton__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!-- Ratón 4 - MX Anywhere 3S -->
+            <div class="raton">
+                <!-- imagen -->
+                <div class="raton__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/mx_anywhere_2.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/mx_anywhere_2.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/mx_anywhere_2.png"
+                            alt="Imagen Logitech MX Anywhere 3S"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="raton__contenido">
+                    <h3 class="raton__subtitulo">MX Anywhere 3S</h3>
+                    <h4 class="raton__frase">
+                        Productividad y portabilidad
+                    </h4>
+                    <p class="raton__info">
+                        Ratón ergonómico, ligero y portable de Logitech. El MX
+                        Anywhere 3S es la mejor opción para la productividad
+                        fuera de casa.
+                    </p>
+                    <p class="raton__precio">$335.000</p>
+                    <a href="#" class="raton__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!-- Ratón 5 - Pebble 2 -->
+            <div class="raton">
+                <!-- imagen -->
+                <div class="raton__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/pebble_mouse_3.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/pebble_mouse_3.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/pebble_mouse_3.png"
+                            alt="Imagen Pebble mouse 2"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="raton__contenido">
+                    <h3 class="raton__subtitulo">Pebble mouse 2</h3>
+                    <h4 class="raton__frase">
+                        Sencillo pero potente
+                    </h4>
+                    <p class="raton__info">
+                        Un ratón de productividad diseñado para ser ultra portable
+                        pero que cuenta con funciones poderosas: conectividad
+                        bluetooth con hasta 3 dispositivos y clics precisos que te
+                        ayudarán a ser más productivo en tu día a día.
+                    </p>
+                    <p class="raton__precio">$102.000</p>
+                    <a href="#" class="raton__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>   
+        <a href="../productos.html" class="ratones__regresar">Regresar a productos</a>
+    </main>
+
+    <!-- SECCIÓN FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer__grid">
+
+             <!-- columna 1 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Productos</h3>
+                <nav class="footer__nav">
+                    <a href="../../index.html" class="footer__link">
+                        Inicio
+                    </a>
+                    <a href="../carrito-compras.html" class="footer__link">
+                        Tu carrito
+                    </a>
+                    <a href="torres-gamer.html" class="footer__link">
+                        Torres gamer
+                    </a>
+                    <a href="portatiles.html" class="footer__link">
+                        Portátiles
+                    </a>
+                    <a href="monitores.html" class="footer__link">
+                        Monitores
+                    </a>
+                    <a href="consolas.html" class="footer__link">
+                        Consolas</a>
+                    <a href="teclados.html" class="footer__link">Teclados
+
+                    </a>
+                    <a href="ratones.html" class="footer__link">
+                        Ratones
+                    </a>
+                    <a href="graficas.html" class="footer__link">
+                        Tarjetas gráficas
+                    </a>
+                    <a href="accesorios.html" class="footer__link">
+                        Accesorios
+                    </a>
+                </nav>
+            </div>
+
+            <!-- columna 2 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Contacto</h3>
+                <!-- Email -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/email.svg"
+                        alt="Icono de Email"
+                    >
+                    <p class="footer__texto">tecnocompu@tecnocompu.co</p>
+                </div>
+                <!-- Dirección -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/address.svg"
+                        alt="Icono de ubicación"
+                    >
+                    <p class="footer__texto">Fake Street 123, Medellín, Colombia</p>
+                </div>
+                <!-- Teléfono -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/phone.svg"
+                        alt="Icono de teléfono"
+                    >
+                    <p class="footer__texto--llamar">+57 3167101510</p>
+                    <a href="tel:+573167101510" class="footer__link--llamar">Llamar</a>
+                </div>
+                <!-- link a formulario contacto -->
+                <div class="footer__contacto">
+                    <a href="contacto.html" class="footer__link--contacto">
+                        Formulario de contacto
+                    </a>
+                </div>
+            </div>
+
+            <!-- columna 3 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Búscanos en</h3>
+                <nav class="footer__social">
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/instagram.svg" alt="Logo de Instagram">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/tik-tok.svg" alt="Logo de Tik-Tok">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/youtube.svg" alt="Logo de YouTube">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/facebook.svg" alt="Logo de Facebook">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/whatsapp.svg" alt="Logo de WhatsApp">
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            &copy TecnoCompu Gaming Store, 2025. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>

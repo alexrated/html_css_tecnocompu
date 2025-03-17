@@ -1,0 +1,35 @@
+/*
+Archivo>   >>> _destacados.scss
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se definen estilos para la clase .destacados
+*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.destacados {
+    margin-top: v.$separacion;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    @include m.tablet {
+        &__grid {
+            @include m.grid(2, 2rem);
+        }
+    }
+    @include m.desktop {
+        &__grid {
+            @include m.grid(2, 3rem);
+        }
+    }
+    &__heading {
+        @include m.heading;
+    }
+}

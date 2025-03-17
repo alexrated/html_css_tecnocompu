@@ -1,0 +1,547 @@
+<!--
+Archivo    >>> index.html
+Proyecto   >>> TecnoCompu Gaming Store web app
+Aprendices >>>
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se escribe el código HTML para la página principal  del proyecto.
+-Se utiliza el enfoque BEM (Block - Module - Modifier) para nombrar las clases CSS
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoCompu Gaming Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <!-- SECCIÓN HEADER -->
+    <header class="header contenedor">
+
+        <!-- logo: -->
+        <div class="header__logo">
+            <a href="index.html">
+                <picture>
+                    <source
+                        srcset="../build/img/logo_tecnocompu.avif"
+                        type="image/avif"
+                    >
+                    <source
+                        srcset="../build/img/logo_tecnocompu.webp"
+                        type="image/webp"
+                    >
+                    <img
+                        loading="lazy"
+                        src="../build/img/logo_tecnocompu.png"
+                        alt="Logo de TecnoCompu Gaming Store"
+                    >
+                </picture
+            </a>
+        </div>
+
+        <!-- navegación: -->
+        <nav class="navegacion">
+            <a href="html/productos.html" class="navegacion__link">Productos</a>
+            <a href="html/contacto.html" class="navegacion__link">Contacto</a>
+
+            <!-- icono inicio usuarios: -->
+            <div class="navegacion__iconos">
+                <a href="html/inicio-sesion-clientes.html" class="navegacion__iconos--imagen">
+                    <img src="build/img/inicio_sesion.svg" alt="Imagen inicio de sesión">
+                    <span class="navegacion__span">Inicia tu sesión</span>
+                </a>
+            </div>
+
+            <!-- icono carrito de compras -->
+            <div class="navegacion__iconos">
+                <a href="html/carrito-compras.html" class="navegacion__iconos--imagen">
+                    <img src="build/img/carrito_compras.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span">Tu carrito</span>
+                </a>
+            </div>
+
+            <!-- icono inicio administradores: -->
+            <div class="navegacion__iconos">
+                <a href="html/inicio-sesion-admin.html" class="navegacion__iconos--imagen">
+                    <img src="build/img/admin.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span navegacion__span--color">Administradores</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- SECCIÓN DESTACADOS Y EN OFERTA -->
+    <main class="contenedor destacados">
+        <!-- heading -->
+        <h2 class="destacados__heading">Nuestros destacados</h2>
+
+        <!-- rejilla de productos destacados -->
+        <div class="destacados__grid">
+
+            <!-- destacado 1 - ROG STRIX -->
+            <div class="destacado">
+                <!-- imagen -->
+                <div class="destacado__imagen">
+                    <picture>
+                        <source
+                            srcset="build/img/rog_g16_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="build/img/rog_g16_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="build/img/rog_g16_1.png"
+                            alt="Imagen ROG Strix G16"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="destacado__contenido">
+                    <h3 class="destacado__subtitulo">rog strix g16</h3>
+                    <h4 class="destacado__frase">
+                        Asegura la victoria
+                    </h4>
+                    <p class="destacado__info">
+                        Adquiere con nosotros la mejor laptop gaming relación calidad
+                        precio del mercado y llévala a otro nivel con el procesador
+                        Intel&copy Core i9 14900HX y hasta una GPU NVIDIA&copy 
+                        RTX 4080 para portátiles.
+                    </p>
+                    <p class="destacado__precio">$9.000.000</p>
+                    <a href="#" class="destacado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+            <!-- destacado  2 - SUPERLIGHT -->
+            <div class="destacado">
+                <!-- imagen -->
+                <div class="destacado__imagen">
+                    <picture>
+                        <source
+                            srcset="build/img/superlight_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="build/img/superlight_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="build/img/superlight_1.png"
+                            alt="Imagen ratón gamer Logitech Superlight 2"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="destacado__contenido">
+                    <h3 class="destacado__subtitulo">pro x superlight 2</h3>
+                    <h4 class="destacado__frase">
+                        Tan ligero como el viento
+                    </h4>
+                    <p class="destacado__info">
+                        Te ofrecemos uno de los mejores ratones gamer del mercado.
+                        Sus 60 gramos de peso te parecerán poco más que una pluma
+                        entre tus manos, mientras que sus switches lightforce de 
+                        alto rendimiento te permitirán alcanzar más kills que nadie.
+                    <p class="destacado__precio">$620.000</p>
+                    <a href="#" class="destacado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+            <!-- destacado 3 - AIR75 HE -->
+            <div class="destacado">
+                <!-- imagen -->
+                <div class="destacado__imagen">
+                    <picture>
+                        <source
+                            srcset="build/img/air75he_2.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="build/img/air75he_2.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="build/img/air75he_2.png"
+                            alt="Imagen teclado Nuphy Air 75HE"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="destacado__contenido">
+                    <h3 class="destacado__subtitulo">Nuphy Air 75HE</h3>
+                    <h4 class="destacado__frase">
+                        Teclea como un PRO
+                    </h4>
+                    <p class="destacado__info">
+                        El mejor teclado de bajo perfil con switches HE del mercado.
+                        El Nuphy&copy Air 75HE combina lo mejor de los teclados
+                        mecánicos con los switches HE de presión personalizable,
+                        de manera que tus kills sean más suaves, precisos y placenteros
+                        para los dedos.
+                    <p class="destacado__precio">$970.000</p>
+                    <a href="#" class="destacado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+            <!-- destacado 4 - MONITOR ULTRAGEAR -->
+            <div class="destacado">
+                <!-- imagen -->
+                <div class="destacado__imagen">
+                    <picture>
+                        <source
+                            srcset="build/img/ultragear_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="build/img/ultragear_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="build/img/ultragear_1.png"
+                            alt="Imagen monitor gamer LG Ultragear"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="destacado__contenido">
+                    <h3 class="destacado__subtitulo">LG ULTRAGEAR 24" full HD</h3>
+                    <h4 class="destacado__frase">
+                        Una vida en alta tasa de refresco
+                    </h4>
+                    <p class="destacado__info">
+                        No pierdas ningún detalle de la derrota de tus oponentes
+                        con el monitor gamer LG Ultragear IPS de 24". Su resolución
+                        Full HD y panel IPS te darán imágenes nítidas con negros
+                        profundos, mientras sus 180hz de tasa de refresco ofrecen
+                        una fluidez increíble para tus juegos.
+                    <p class="destacado__precio">$1.075.000</p>
+                    <a href="#" class="destacado__agregar">Agregar al carrito</a>                        
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SECCIÓN SOBRE NOSOTROS -->
+    <section class="nosotros">
+        <div class="contenedor nosotros__grid">
+            <!-- información -->
+             <div class="nosotros__info">
+                 <h3 class="nosotros__subtitulo">Sobre nosotros</h3>
+                 <p class="nosotros__descripcion">
+                    TecnoCompu Gaming Store&copy es una tienda dedicada a la venta de 
+                    equipos y accesorios para PC Gaming y de productividad, 
+                    con énfasis en la satisfacción de sus clientes. Aportamos valor 
+                    agregado con nuestros conocimientos técnicos especializados para
+                    mantenimiento y reparación tanto de hardware como de software
+                    multiplataforma (Windows, macOS y Linux).
+                 </p>
+             </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN OPINIONES -->
+    <section class="contenedor opiniones">
+        <!-- heading -->
+        <h2 class="opiniones__heading">Lo que dicen nuestros clientes</h2>
+        <!-- cuadricula opiniones -->
+        <div class="opiniones__grid">
+            <!-- opinión 1 -->
+            <div class="opinion">
+                <header class="opinion__header">
+                    <div class="opinion__imagen">
+                        <picture>
+                            <source
+                                srcset="build/img/opinion1.avif"
+                                type="image/avif"
+                            >
+                            <source
+                                srcset="build/img/opinion1.webp"
+                                type="image/webp"
+                            >
+                            <img
+                                loading="lazy"
+                                src="build/img/opinion1.jpg"
+                                alt="Imagen cliente de TecnoCompu"
+                            >
+                        </picture>
+                    </div>
+                    <div class="opinion__info">
+                        <p class="opinion__autor">Camila Pérez</p>
+                        <picture>
+                            <source
+                                srcset="build/img/estrellas.avif"
+                                type="image/avif"
+                            >
+                            <source
+                                srcset="build/img/estrellas.webp"
+                                type="image/webp"
+                            >
+                            <img
+                                loading="lazy"
+                                src="build/img/estrellas.png"
+                                alt="Imagen estrellas de calificación"
+                            >
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="opinion__texto">
+                    Excelente atención y buenos precios. Me guiaron durante todo el 
+                    proceso de compra con suma amabilidad y me ayudaron a escoger
+                    el portátil que mejor se adaptaba a mis necesidades.
+                    100% recomendado.
+                </blockquote>
+            </div>
+
+            <!-- opinión 2 -->
+            <div class="opinion">
+                <header class="opinion__header">
+                    <div class="opinion__imagen">
+                        <picture>
+                            <source
+                                srcset="build/img/opinion2.avif"
+                                type="image/avif"
+                            >
+                            <source
+                                srcset="build/img/opinion2.webp"
+                                type="image/webp"
+                            >
+                            <img
+                                loading="lazy"
+                                src="build/img/opinion2.jpg"
+                                alt="Imagen cliente de TecnoCompu"
+                            >
+                        </picture>
+                    </div>
+                    <div class="opinion__info">
+                        <p class="opinion__autor">Ricardo Bonilla</p>
+                        <picture>
+                            <source
+                                srcset="build/img/estrellas.avif"
+                                type="image/avif"
+                            >
+                            <source
+                                srcset="build/img/estrellas.webp"
+                                type="image/webp"
+                            >
+                            <img
+                                loading="lazy"
+                                src="build/img/estrellas.png"
+                                alt="Imagen estrellas de calificación"
+                            >
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="opinion__texto">
+                    TecnoCompu es una tienda confiable. Siempre he sido desconfiado
+                    con las compras por internet pero me animé a comprar un teclado
+                    mecánico gamer en esta página y resultó una experiencia sencilla,
+                    rápida y segura. ¡Y el teclado llegó en solo dos días a mi casa! 
+                </blockquote>
+            </div>
+
+            <!-- opinión 3 -->
+            <div class="opinion">
+                <header class="opinion__header">
+                    <div class="opinion__imagen">
+                        <picture>
+                            <source
+                                srcset="build/img/opinion3.avif"
+                                type="image/avif"
+                            >
+                            <source
+                                srcset="build/img/opinion3.webp"
+                                type="image/webp"
+                            >
+                            <img
+                                loading="lazy"
+                                src="build/img/opinion3.jpg"
+                                alt="Imagen cliente de TecnoCompu"
+                            >
+                        </picture>
+                    </div>
+                    <div class="opinion__info">
+                        <p class="opinion__autor">Ximena Castro</p>
+                        <picture>
+                            <source
+                                srcset="build/img/estrellas.avif"
+                                type="image/avif"
+                            >
+                            <source
+                                srcset="build/img/estrellas.webp"
+                                type="image/webp"
+                            >
+                            <img
+                                loading="lazy"
+                                src="build/img/estrellas.png"
+                                alt="Imagen estrellas de calificación"
+                            >
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="opinion__texto">
+                    Adquirí con TecnoCompu una torre gamer para mi hijo menor. Me
+                    brindaron una excelente asesoría y ensamblaron el producto frente
+                    a nosotros, desempaquetando cada componente para que tuviéramos
+                    certeza de que eran completamente nuevos. ¡Y hasta con mucha
+                    paciencia y amabilidad nos explicaron para qué servía cada pieza!
+                    Mi único problema es que mi hijo no para de jugar con su
+                    flamante PC nuevo.
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NEWSLETTER -->
+    <section class="contenedor newsletter">
+        <div class="newsletter__grid">
+            <!-- información -->
+            <div class="newsletter__info">
+                <h3 class="newsletter__subtitulo">Más información</h3>
+                <p class="newsletter__descripcion">
+                    Únete a nuestra lista de correos electrónicos para obtener
+                    información sobre ofertas exclusivas, nuevos productos,
+                    descuentos y más.
+                </p>
+                <!-- formulario -->
+                <form class="formulario">
+                    <div class="formulario__campo">
+                        <input
+                            class="formulario__input"
+                            type="email"
+                            placeholder="Tu correo electrónico"
+                            required
+                        >
+                    </div>
+                    <div class="formulario__campo">
+                        <a href="#" class="formulario__boton--inicio">Subscribirme</a>                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer__grid">
+
+             <!-- columna 1 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Productos</h3>
+                <nav class="footer__nav">
+                    <a href="index.html" class="footer__link">
+                        Inicio
+                    </a>
+                    <a href="html/carrito-compras.html" class="footer__link">
+                        Tu carrito
+                    </a>
+                    <a href="html/cat-products/torres-gamer.html" class="footer__link">
+                        Torres gamer
+                    </a>
+                    <a href="html/cat-products/portatiles.html" class="footer__link">
+                        Portátiles
+                    </a>
+                    <a href="html/cat-products/monitores.html" class="footer__link">
+                        Monitores
+                    </a>
+                    <a href="html/cat-products/consolas.html" class="footer__link">
+                        Consolas
+                    </a>
+                    <a href="html/cat-products/teclados.html" class="footer__link">Teclados
+
+                    </a>
+                    <a href="html/cat-products/ratones.html" class="footer__link">
+                        Ratones
+                    </a>
+                    <a href="html/cat-products/graficas.html" class="footer__link">
+                        Tarjetas gráficas
+                    </a>
+                    <a href="html/cat-products/accesorios.html" class="footer__link">
+                        Accesorios
+                    </a>
+                </nav>
+            </div>
+
+            <!-- columna 2 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Contacto</h3>
+                <!-- Email -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="build/img/email.svg"
+                        alt="Icono de Email"
+                    >
+                    <p class="footer__texto">tecnocompu@tecnocompu.co</p>
+                </div>
+                <!-- Dirección -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="build/img/address.svg"
+                        alt="Icono de ubicación"
+                    >
+                    <p class="footer__texto">Fake Street 123, Medellín, Colombia</p>
+                </div>
+                <!-- Teléfono -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="build/img/phone.svg"
+                        alt="Icono de teléfono"
+                    >
+                    <p class="footer__texto--llamar">+57 3167101510</p>
+                    <a href="tel:+573167101510" class="footer__link--llamar">Llamar</a>
+                </div>
+                <!-- link a formulario contacto -->
+                <div class="footer__contacto">
+                    <a href="html/contacto.html" class="footer__link--contacto">
+                        Formulario de contacto
+                    </a>
+                </div>
+            </div>
+
+            <!-- columna 3 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Búscanos en</h3>
+                <nav class="footer__social">
+                    <a href="#" class="footer__iconos">
+                        <img src="build/img/instagram.svg" alt="Logo de Instagram">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="build/img/tik-tok.svg" alt="Logo de Tik-Tok">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="build/img/youtube.svg" alt="Logo de YouTube">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="build/img/facebook.svg" alt="Logo de Facebook">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="build/img/whatsapp.svg" alt="Logo de WhatsApp">
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            &copy TecnoCompu Gaming Store, 2025. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>

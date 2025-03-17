@@ -1,0 +1,122 @@
+/*
+Archivo>   >>> _contacto.scss
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se definen estilos para las clases .contacto y .formulario
+-La mayoría de estilos para los campos del formulario se escribieron en el archivo
+ _formulario.scss de la carpeta newsletter. Acá se reescriben algunas declaraciones.
+*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color' as c;
+
+// Estilos generales para la página de contacto:
+.contacto {
+    &__heading {
+        @include m.heading;
+        @include m.tablet {
+            text-align: left;
+        }
+    }
+
+    &__obligatorios {
+        text-align: center;
+        color: v.$colorSecundario;
+        margin: 1rem 0 v.$separacion;
+        @include m.tablet {
+            text-align: left;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-areas: "image image" "form form";
+        grid-template-rows: 0.8fr 2.5fr;
+        row-gap: 2rem;
+        
+        @include m.tablet {
+            grid-template-rows: unset;
+            row-gap: unset;
+            @include m.grid(2, v.$separacion);
+            padding: 2.5rem 1rem v.$separacion 1rem;
+        }
+    }
+
+    
+    & {
+        background-image: linear-gradient(to bottom, transparent 50%, v.$negro 0%),
+        image-set(
+            url(../img/rog_g16_3.avif) type('image/avif'),
+            url(../img/rog_g16_3.webp) type('image/webp'),
+            url(../img/rog_g16_3.png) type('image/png')
+        );
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+    
+    @include m.tablet {
+        background-image: linear-gradient(to left, transparent 50%, v.$negro 0%),
+        image-set(
+            url(../img/rog_g16_1.avif) type('image/avif'),
+            url(../img/rog_g16_1.webp) type('image/webp'),
+            url(../img/rog_g16_1.png) type('image/png')
+        );
+        background-position: right center;
+        background-size: 100%;
+    }
+
+    &__info {
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        @include m.tablet {
+            grid-column: 1 / 2;
+        }
+    }
+}
+
+// Estilos para el formulario:
+.formulario {
+    // max-width: 60rem;
+
+    &__border {
+        border: 0.25rem solid c.adjust(v.$colorPrimario, $lightness: -10%);
+        margin-bottom: v.$separacion;
+        padding: 2rem;
+
+    }
+
+    &__legend {
+        text-align: center;
+        color: v.$colorSecundario;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0 1rem;
+    }
+
+    &__campo {
+        flex-direction: row;
+    }
+
+    &__label {
+        color: v.$colorSecundario;
+        flex-basis: 10rem;
+    }
+
+    &__input {
+        text-align: left
+    }
+
+    &__boton {
+        @include m.boton(v.$colorPrimario, v.$blanco);
+    }
+}

@@ -1,0 +1,15 @@
+/*
+Archivo>   >>> index.scss (de la carpeta "header")
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se le hace el @forward a los archivos de la carpeta
+ "header", de manera que puedan ser compilados.
+*/
+@forward 'header';
+@forward 'navegacion';

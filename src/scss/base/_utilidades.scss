@@ -1,0 +1,23 @@
+/*
+Archivo>   >>> _utilidades.scss
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se definen algunas funcionalidades
+ de uso global para la aplicación
+*/
+
+@use 'variables' as v;
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primario {
+    background-color: v.$colorPrimario;
+}

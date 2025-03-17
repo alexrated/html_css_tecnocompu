@@ -1,0 +1,29 @@
+/*
+Archivo>   >>> _opiniones.scss
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se definen estilos para la clase .opiniones
+*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.opiniones {
+    margin-top: 10rem;
+
+    &__heading {
+        @include m.heading;
+    }
+
+    &__grid {
+        margin-top: v.$separacion;
+        @include m.tablet {
+            @include m.grid(2, 3rem);
+        }
+    }
+}

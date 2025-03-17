@@ -1,0 +1,95 @@
+/*
+Archivo>   >>> _productos.scss
+Proyecto   >>> TecnoCompu Gaming Store Web App
+Aprendices >>> 
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se definen estilos para las clases .categorias__producto y .categoria
+-Cada categoría consiste en una tarjeta independiente de producto
+*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color' as c;
+
+// Estilos para la rejilla de productos:
+.categorias-producto {
+    margin-top: v.$separacion;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @include m.tablet {
+        &__grid {
+            @include m.grid(2, 2rem);
+        }
+    }
+
+    @include m.desktop {
+        &__grid {
+            @include m.grid(2, 3rem);
+        }
+    }
+
+    &__heading {
+        @include m.heading;
+    }
+}
+
+// Estilos para cada tarjeta de categoría de producto:
+.categoria {
+    background-color: v.$colorTerciario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0;
+    padding: 2rem;
+    box-shadow: 0.5px 0.5px 0rem 0.25rem c.adjust(v.$colorPrimario, $lightness: -40%);
+    border-radius: 1rem;
+    transition-property: transform;
+    transition-duration: 300ms;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:last-of-type {
+        margin-bottom: v.$separacion;
+    }
+
+    @include m.tablet {
+        margin: 0rem;
+
+        &:nth-child(7) {
+            margin-bottom: v.$separacion;
+        }
+    }
+
+    &__imagen {
+        width: 30rem;
+        margin: 0 auto;
+    }
+
+    &__subtitulo {
+        margin: 2rem 0 1rem;
+        font-family: v.$fuentePrincipal;
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: v.$colorSecundario;
+    }
+
+    &__frase {
+        color: v.$blanco;
+        font-family: v.$fuenteSecundaria;
+        font-size: 2.4rem;
+        text-align: center;
+        margin: 0rem 0rem 4rem;
+    }
+}

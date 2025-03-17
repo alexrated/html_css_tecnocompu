@@ -1,0 +1,348 @@
+<!--
+Archivo    >>> accesorios.html
+Proyecto   >>> TecnoCompu Gaming Store web app
+Aprendices >>>
+               Javier Alexander Echeverri Agudelo
+               Miguel Alfredo Bermúdez Longas
+Programa   >>> ADSO, SENA
+Ficha      >>> 2977434
+Fecha      >>> diciembre de 2024
+
+-En este archivo se escribe el HTML para la página de productos "accesorios".
+-Se utiliza el enfoque BEM (Block - Module - Modifier) para nombrar las clases CSS
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoCompu - Accesorios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../build/css/app.css">
+</head>
+
+<body>
+    <!-- SECCIÓN HEADER -->
+    <header class="header contenedor">
+
+        <!-- logo: -->
+        <div class="header__logo">
+            <a href="../../index.html">
+                <picture>
+                    <source
+                        srcset="../../build/img/logo_tecnocompu.avif"
+                        type="image/avif"
+                    >
+                    <source
+                        srcset="../../build/img/logo_tecnocompu.webp"
+                        type="image/webp"
+                    >
+                    <img
+                        loading="lazy"
+                        src="../../build/img/logo_tecnocompu.png"
+                        alt="Logo de TecnoCompu Gaming Store"
+                    >
+                 </picture>
+            </a>
+        </div>
+
+        <!-- navegación: -->
+        <nav class="navegacion">
+            <a href="../productos.html" class="navegacion__link activo">Productos</a>
+            <a href="../contacto.html" class="navegacion__link">Contacto</a>
+
+            <!-- icono inicio usuarios: -->
+            <div class="navegacion__iconos">
+                <a href="../inicio-sesion-clientes.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/inicio_sesion.svg" alt="Imagen inicio de sesión">
+                    <span class="navegacion__span">Inicia tu sesión</span>
+                </a>
+            </div>
+
+            <!-- icono carrito de compras -->
+            <div class="navegacion__iconos">
+                <a href="../carrito-compras.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/carrito_compras.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span">Tu carrito</span>
+                </a>
+            </div>
+
+            <!-- icono inicio administradores: -->
+            <div class="navegacion__iconos">
+                <a href="../inicio-sesion-admin.html" class="navegacion__iconos--imagen">
+                    <img src="../../build/img/admin.svg" alt="Imagen carrito de compras">
+                    <span class="navegacion__span navegacion__span--color">Administradores</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- SECCIÓN ACCESORIOS-->
+    <main class="contenedor accesorios">
+        <!-- heading -->
+        <h2 class="accesorios__heading">Accesorios</h2>
+
+        <!-- rejilla accesorios -->
+        <div class="accesorios__grid">
+
+            <!-- Accesorio 1 - audífonos -->
+            <div class="accesorio">
+                <!-- imagen -->
+                <div class="accesorio__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/audifonos_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/audifonos_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/audifonos_1.png"
+                            alt="Imagen audífonos Sony MX-1000xm4"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="accesorio__contenido">
+                    <h3 class="accesorio__subtitulo">Sony WH-1000xm4</h3>
+                    <h4 class="accesorio__frase">
+                        Sonido de alta calidad
+                    </h4>
+                    <p class="accesorio__info">
+                        ¡Dale cariño a tus oídos! Los audífonos Sony WH-1000mx4
+                        son los mejores calidad - precio del mercado, con bajos
+                        profundos, sonido de alta fidelidad y la cancelación de
+                        ruido activa líder del sector
+                    </p>
+                    <p class="accesorio__precio">$950.000</p>
+                    <a href="#" class="accesorio__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!-- Accesorio 2 - mousepad -->
+            <div class="accesorio">
+                <!-- imagen -->
+                <div class="accesorio__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/mousepad_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/mousepad_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/mousepad_1.png"
+                            alt="Imagen mousepad Logitech"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="accesorio__contenido">
+                    <h3 class="accesorio__subtitulo">Mousepad gamer Logitech</h3>
+                    <h4 class="accesorio__frase">
+                        Movimientos perfectos
+                    </h4>
+                    <p class="accesorio__info">
+                        Desliza tu ratón con suavidad y perfección. Este mousepad
+                        gamer Logitech cuenta con base antideslizante para impedir
+                        movimientos indeseados sobre tu escritorio y una altura total
+                        de 3mm. 
+                    </p>
+                    <p class="accesorio__precio">$105.000</p>
+                    <a href="#" class="accesorio__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!-- Accesorio 3 - silla gamer -->
+            <div class="accesorio">
+                <!-- imagen -->
+                <div class="accesorio__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/sillaA_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/sillaA_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/sillaA_1.png"
+                            alt="Imagen silla gamer blanca"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="accesorio__contenido">
+                    <h3 class="accesorio__subtitulo">Silla gamer GT Racing</h3>
+                    <h4 class="accesorio__frase">
+                        Calidad, comodidad y ergonomía
+                    </h4>
+                    <p class="accesorio__info">
+                        La silla gamer GT Racing está fabricada en materiales
+                        suaves y resistentes, que te permitirán alcanzar una
+                        gran comodidad durante muchas horas de partida. Cuenta con
+                        un ángulo de inclinación de 180° y ajustes 3d en los
+                        reposa brazos.
+                    </p>
+                    <p class="accesorio__precio">$1.099.000</p>
+                    <a href="#" class="accesorio__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!-- Accesorio 4 - silla gamer -->
+            <div class="accesorio">
+                <!-- imagen -->
+                <div class="accesorio__imagen">
+                    <picture>
+                        <source
+                            srcset="../../build/img/sillaB_1.avif"
+                            type="image/avif"
+                        >
+                        <source
+                            srcset="../../build/img/sillaB_1.webp"
+                            type="image/webp"
+                        >
+                        <img
+                            loading="lazy"
+                            src="../../build/img/sillaB_1.png"
+                            alt="Imagen silla gamer blanca"
+                        >
+                    </picture>
+                </div>
+                <!-- contenido -->
+                <div class="accesorio__contenido">
+                    <h3 class="accesorio__subtitulo">Silla gamer Race</h3>
+                    <h4 class="accesorio__frase">
+                        Confort al mejor precio
+                    </h4>
+                    <p class="accesorio__info">
+                        La mejor silla gamer para presupuestos apretados. El modelo
+                        Racer te brindará confort para tus largas partidas mientras
+                        cuida de tu bolsillo. Materiales de calidad y fácil armado.
+                    </p>
+                    <p class="accesorio__precio">$650.000</p>
+                    <a href="#" class="accesorio__agregar">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <a href="../productos.html" class="accesorios__regresar">Regresar a productos</a>
+    </main>
+
+    <!-- SECCIÓN FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer__grid">
+
+             <!-- columna 1 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Productos</h3>
+                <nav class="footer__nav">
+                    <a href="../../index.html" class="footer__link">
+                        Inicio
+                    </a>
+                    <a href="../carrito-compras.html" class="footer__link">
+                        Tu carrito
+                    </a>
+                    <a href="torres-gamer.html" class="footer__link">
+                        Torres gamer
+                    </a>
+                    <a href="portatiles.html" class="footer__link">
+                        Portátiles
+                    </a>
+                    <a href="monitores.html" class="footer__link">
+                        Monitores
+                    </a>
+                    <a href="consolas.html" class="footer__link">
+                        Consolas</a>
+                    <a href="teclados.html" class="footer__link">Teclados
+
+                    </a>
+                    <a href="ratones.html" class="footer__link">
+                        Ratones
+                    </a>
+                    <a href="graficas.html" class="footer__link">
+                        Tarjetas gráficas
+                    </a>
+                    <a href="accesorios.html" class="footer__link">
+                        Accesorios
+                    </a>
+                </nav>
+            </div>
+
+            <!-- columna 2 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Contacto</h3>
+                <!-- Email -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/email.svg"
+                        alt="Icono de Email"
+                    >
+                    <p class="footer__texto">tecnocompu@tecnocompu.co</p>
+                </div>
+                <!-- Dirección -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/address.svg"
+                        alt="Icono de ubicación"
+                    >
+                    <p class="footer__texto">Fake Street 123, Medellín, Colombia</p>
+                </div>
+                <!-- Teléfono -->
+                <div class="footer__contacto">
+                    <img
+                        class="footer__iconos"
+                        src="../../build/img/phone.svg"
+                        alt="Icono de teléfono"
+                    >
+                    <p class="footer__texto--llamar">+57 3167101510</p>
+                    <a href="tel:+573167101510" class="footer__link--llamar">Llamar</a>
+                </div>
+                <!-- link a formulario contacto -->
+                <div class="footer__contacto">
+                    <a href="contacto.html" class="footer__link--contacto">
+                        Formulario de contacto
+                    </a>
+                </div>
+            </div>
+
+            <!-- columna 3 -->
+            <div class="footer__columna">
+                <h3 class="footer__heading">Búscanos en</h3>
+                <nav class="footer__social">
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/instagram.svg" alt="Logo de Instagram">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/tik-tok.svg" alt="Logo de Tik-Tok">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/youtube.svg" alt="Logo de YouTube">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/facebook.svg" alt="Logo de Facebook">
+                    </a>
+                    <a href="#" class="footer__iconos">
+                        <img src="../../build/img/whatsapp.svg" alt="Logo de WhatsApp">
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            &copy TecnoCompu Gaming Store, 2025. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>
