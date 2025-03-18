@@ -21,7 +21,7 @@ En este repositorio se encuentra alojado el código fuente en HTML y SCSS para l
 ## Instalación
 - Se debe instalar previamente _nodejs_, _npm_ y _npx_. Consultar documentación correspondiente en la web.
   
-- Clonar el presente repositorio en el directorio destino en local (tu PC o Mac) que se desee. Para clonar, usar el comando `git clone https://github.com/alexrated/html_css_tecnocompu`
+- Clonar el presente repositorio en el directorio destino en local (tu PC o Mac, con git previamente instalado. Se puede descargar desde [la página oficial de git](https://git-scm.com/downloads) y se siguen las instrucciones según el sistema operativo para el cual se descarga) que se desee. Para clonar, usar el comando `git clone https://github.com/alexrated/html_css_tecnocompu`
   
 - Instalar la herramienta gulp con el comando `npm install --global gulp-cli`. En Linux seguramente se debe hacer como _superusuario_ usando `sudo` y en Windows se debe ejecutar la _powershell_ o terminal de Windows como usuario administrador. También es posible que en Windows deba cambiarse la política de permisos para la ejecución de _scripts_. Esto se hace con el comando `Set-ExecutionPolicy RemoteSigned -Scope LocalMachine` y escoger la opción _sí a todo_.
   
